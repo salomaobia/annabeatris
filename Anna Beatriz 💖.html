@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)file:///C:/Users/salom/Documents/html5/.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Anna Beatriz 💖</title>
+<style>
+body{
+    margin:0;
+    font-family:'Segoe UI', sans-serif;
+    background:linear-gradient(135deg,#ff4e8a,#ff9ac2);
+    color:white;
+    text-align:center;
+    overflow-x:hidden;
+}
+
+header{
+    padding:30px;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.section{
+    background:white;
+    color:#ff4e8a;
+    margin:20px;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.moment{
+    margin:15px 0;
+    padding:15px;
+    border-radius:15px;
+    background:#ffe3ec;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.moment:hover{
+    transform:scale(1.05);
+}
+
+.gallery img{
+    width:150px;
+    height:150px;
+    object-fit:cover;
+    border-radius:15px;
+    margin:10px;
+}
+
+button{
+    padding:12px 25px;
+    border:none;
+    border-radius:25px;
+    background:#ff4e8a;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    margin-top:15px;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#ff1f6b;
+}
+
+#declarationBox{
+    margin-top:20px;
+    font-size:18px;
+    display:none;
+}
+
+.heart{
+    position:fixed;
+    animation:fall 6s linear infinite;
+}
+
+@keyframes fall{
+    from{ transform:translateY(-10vh);}
+    to{ transform:translateY(110vh);}
+}
+</style>
+</head>
+<body>
+
+<header>Anna Beatriz 💖 Nosso Amor</header>
+
+<div class="section">
+    <h2>📸 Nossos Momentos</h2>
+
+    <div class="moment" onclick="mostrarDeclaracao(0)">
+        💕 O dia que nos conhecemos
+    </div>
+
+    <div class="moment" onclick="mostrarDeclaracao(1)">
+        🌅 Nosso primeiro momento especial
+    </div>
+
+    <div class="moment" onclick="mostrarDeclaracao(2)">
+        😂 As risadas que nunca acabam
+    </div>
+
+    <div class="moment" onclick="mostrarDeclaracao(3)">
+        🤍 O que você significa para mim
+    </div>
+
+    <div id="declarationBox"></div>
+</div>
+
+<div class="section">
+    <h2>📷 Nossa Galeria</h2>
+    <!-- Troque pelas fotos de vocês -->
+    <div class="gallery">
+        <img src="./Anna Beatriz 💖_files/WhatsApp Image 2026-02-18 at 21.54.21.jpeg">
+        <img src="./Anna Beatriz 💖_files/WhatsApp Image 2026-02-18 at 21.54.21.jpeg">
+        <img src="./Anna Beatriz 💖_files/WhatsApp Image 2026-02-18 at 21.54.21.jpeg">
+        <img src="./Anna Beatriz 💖_files/WhatsApp Image 2026-02-18 at 21.54.21.jpeg">
+        <img src="./Anna Beatriz 💖_files/WhatsApp Image 2026-02-18 at 21.54.21.jpeg">
+        <img src="./Anna Beatriz 💖_files/WhatsApp Image 2026-02-18 at 21.54.21.jpeg">
+        <img src="./Anna Beatriz 💖_files/WhatsApp Image 2026-02-18 at 21.54.21.jpeg">
+    </div>
+</div>
+
+<div class="section">
+    <h2>💌 Mensagem Final</h2>
+    <button onclick="mensagemFinal()">Clique para uma surpresa</button>
+    <div id="finalMessage" style="display:none; margin-top:15px;">
+        Anna Beatriz,  
+        cada momento com vc foi muito especial , vc é meu porto seguro meu amor sincero e generoso , eu te amo muito bia, vou estar sempre ao seu lado meu amor, eu ,Deus e vc , vc é top meu amor uma mulher madura linda por dentro e por fora , quero me casar com vc e ter filhos , uma linda familia e ser o melhor marido do mundo , bjjjjjjjjjjjjjjjjjjjjjjjjjj 💖✨
+    </div>
+</div>
+
+<script>
+
+const declaracoes = [
+"Desde o primeiro momento que te vi, algo em mim soube que você era diferente. 💞",
+"Cada lembrança ao seu lado é como uma cena de filme que eu nunca quero que acabe. 🎬✨",
+"Seu sorriso é meu lugar favorito no mundo. 😍",
+"Você não é só parte da minha vida… você é a melhor parte dela. 🤍"
+];
+
+function mostrarDeclaracao(index){
+    const box = document.getElementById("declarationBox");
+    box.style.display="block";
+    box.innerHTML = declaracoes[index];
+}
+
+function mensagemFinal(){
+    document.getElementById("finalMessage").style.display="block";
+}
+
+// Corações caindo
+function criarCoracao(){
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML="💖";
+    heart.style.left=Math.random()*100+"vw";
+    heart.style.fontSize=(15+Math.random()*25)+"px";
+    heart.style.animationDuration=(4+Math.random()*3)+"s";
+    document.body.appendChild(heart);
+
+    setTimeout(()=>heart.remove(),6000);
+}
+
+setInterval(criarCoracao,600);
+
+</script>
+
+
+
+<div class="heart" style="left: 94.0859vw; font-size: 15.571px; animation-duration: 5.48006s;">💖</div><div class="heart" style="left: 22.9809vw; font-size: 32.7371px; animation-duration: 5.44904s;">💖</div><div class="heart" style="left: 15.6988vw; font-size: 19.9253px; animation-duration: 6.77194s;">💖</div><div class="heart" style="left: 34.6108vw; font-size: 24.9959px; animation-duration: 5.96955s;">💖</div><div class="heart" style="left: 31.7735vw; font-size: 17.6471px; animation-duration: 6.8511s;">💖</div><div class="heart" style="left: 47.6745vw; font-size: 26.9963px; animation-duration: 6.65541s;">💖</div><div class="heart" style="left: 84.9227vw; font-size: 19.6557px; animation-duration: 5.87327s;">💖</div><div class="heart" style="left: 99.0364vw; font-size: 20.6132px; animation-duration: 4.43176s;">💖</div><div class="heart" style="left: 33.656vw; font-size: 34.6352px; animation-duration: 6.23869s;">💖</div><div class="heart" style="left: 57.6739vw; font-size: 36.4054px; animation-duration: 4.68129s;">💖</div></body></html>
